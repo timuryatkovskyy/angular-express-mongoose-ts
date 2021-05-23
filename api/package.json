@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "app": "ts-node-dev server.ts",
+    "build": "build api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.11",
+    "@types/helmet": "^4.0.0",
+    "@types/mongodb": "^3.6.12",
+    "@types/pug": "^2.0.4",
+    "bcrypt": "^5.0.1",
+    "bootstrap": "^4.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^4.5.0",
+    "jquery": "^3.6.0",
+    "mongodb": "^3.6.6",
+    "mongoose": "^5.12.7",
+    "popper.js": "^1.16.1",
+    "pug": "^3.0.2",
+    "ts-node": "^9.1.1",
+    "ts-node-dev": "^1.1.6",
+    "tslint": "^6.1.3",
+    "typescript": "^4.2.4"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.1",
+    "@types/mongoose": "^5.10.5"
+  }
+}

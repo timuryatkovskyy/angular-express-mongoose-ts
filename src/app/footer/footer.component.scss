@@ -1,0 +1,25 @@
+.displayBlock-FloatLeft {
+    background-color: rgb(49, 120, 198);
+    display: block;
+    float: left;
+    padding: 12px 10px;
+    & ul li {
+        list-style-type: none;
+    }
+    & ul li a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+}
+.footer {
+    .footer__links {
+        @extend .displayBlock-FloatLeft;
+        
+    }
+    .footer__contacts {
+        @extend .displayBlock-FloatLeft;
+    }
+    .footer__legal {
+        @extend .displayBlock-FloatLeft;
+    }
+}

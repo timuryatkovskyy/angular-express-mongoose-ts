@@ -1,0 +1,55 @@
+<form action="" method="post" #form="ngForm">
+    <div class="row">
+        <div class="col-25">
+            <label for="">Tipo profilo</label>
+        </div>
+        <div class="col-75">
+            <select name="select-profile" id="select-profile" 
+            [(ngModel)]="userData.profileType">
+                <option value="single" selected>Individuale in cerca del lavoro</option>
+                <option value="company">Azienda in cerca del personale</option>
+            </select>
+        </div>       
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="name">Nome</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="name" id="name" 
+            placeholder="Nome" [(ngModel)]="userData.name">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="lastname">Cognome</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="lastname" id="lastname" 
+            placeholder="Cognome" [(ngModel)]="userData.lastname">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="email">Email</label>
+        </div>
+        <div class="col-75">
+            <input type="text" name="email" id="email" 
+            placeholder="Email" [(ngModel)]="userData.email">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+            <label for="password">Password</label>
+        </div>
+        <div class="col-75">
+            <input type="password" name="password" id="password" 
+            placeholder="Password" [(ngModel)]="userData.password">
+        </div>
+    </div>    
+    <div class="row">
+        <input type="submit" (click)="createJobSeekerProfile(userData)" value="Conferma la registrazione">
+    </div>   
+</form>
+
+{{ diagnostic }}

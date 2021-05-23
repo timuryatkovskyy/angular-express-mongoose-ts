@@ -1,0 +1,33 @@
+<section class="searching__bar">
+    <form class="searching__bar_form" action="" method="get">
+        <div class="searching__bar_label">
+            <label for="">Cosa cerchi?</label>
+        </div>
+        <div class="searching__bar_input_searching">
+            <input type="search" name="searching" id="searching">
+        </div>
+        <div class="searching__bar_label">
+            <label for="location">Luogo</label>
+        </div>
+        <div class="searching__bar_input_location">
+            <input type="text" name="locaiton" id="location">
+        </div>
+        <div class="searching__bar_submit_button">
+            <input type="submit" value="Trova lavoro">
+        </div>
+        
+    </form>
+</section>
+<section class="searching row">
+    <div class="searching__filters col-3 col-s-1">
+        <div *ngFor="let f of filters">
+            <input type="checkbox" name="filter" id="filter">
+            <label for="filter">&nbsp; {{ f.name }}</label>
+        </div>
+    </div>
+    <div class="searching__results col-9 col-s-1">
+        <div *ngFor="let seeker of seekers">
+            <h4>{{ seeker.name }}&nbsp;{{ seeker.lastname }}</h4>
+        </div>
+    </div>
+</section>

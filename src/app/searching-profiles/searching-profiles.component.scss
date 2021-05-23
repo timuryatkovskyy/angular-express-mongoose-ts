@@ -1,0 +1,35 @@
+
+.main-content {
+    background-color: #FFFFFF;
+    display: block;
+    float: left;
+    border: 2px solid #3178C6;
+    border-radius: 3px;
+    padding: 15px 10px;
+}
+.searching {
+    .searching__filters {
+        @extend .main-content;
+    }
+    .searching__results {
+        @extend .main-content;
+    }
+}
+.searching__bar {
+    padding: 12px 10px;
+}
+.searching__bar_form {
+    margin: auto;
+    max-width: 800px;
+}
+[class*="searching__bar_"] {
+    display: inline-block;
+    margin-right: 2px;
+}
+input[type=text], input[type=search], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
